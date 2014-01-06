@@ -71,7 +71,7 @@ class FacebookRequired(object):
         this needs to be the same for requesting and accepting the token
         '''
         if fb_settings.FACEBOOK_REDIRECT_URI:
-            return FACEBOOK_REDIRECT_URI
+            return fb_settings.FACEBOOK_REDIRECT_URI
         
         if self.canvas:
             redirect_uri = fb_settings.FACEBOOK_CANVAS_PAGE
