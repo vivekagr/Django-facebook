@@ -61,7 +61,7 @@ FACEBOOK_LOGIN_DEFAULT_REDIRECT = getattr(
     settings, 'FACEBOOK_LOGIN_DEFAULT_REDIRECT', '/')
     
 FACEBOOK_REDIRECT_URI = getattr(
-    settings, 'FACEBOOK_REDIRECT_URI', '/')
+    settings, 'FACEBOOK_REDIRECT_URI', None)
 
 # Force profile update every login
 FACEBOOK_FORCE_PROFILE_UPDATE_ON_LOGIN = getattr(
