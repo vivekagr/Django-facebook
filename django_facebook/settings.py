@@ -59,6 +59,9 @@ FACEBOOK_REGISTRATION_FORM = getattr(settings,
 # Fall back redirect location when no other location was found
 FACEBOOK_LOGIN_DEFAULT_REDIRECT = getattr(
     settings, 'FACEBOOK_LOGIN_DEFAULT_REDIRECT', '/')
+    
+FACEBOOK_REDIRECT_URI = getattr(
+    settings, 'FACEBOOK_REDIRECT_URI', '/')
 
 # Force profile update every login
 FACEBOOK_FORCE_PROFILE_UPDATE_ON_LOGIN = getattr(
