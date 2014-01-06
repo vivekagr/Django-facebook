@@ -70,6 +70,9 @@ class FacebookRequired(object):
         return the redirect uri to use for oauth authorization
         this needs to be the same for requesting and accepting the token
         '''
+        if fb_settings.FACEBOOK_REDIRECT_URI:
+            return FACEBOOK_REDIRECT_URI
+        
         if self.canvas:
             redirect_uri = fb_settings.FACEBOOK_CANVAS_PAGE
         else:
